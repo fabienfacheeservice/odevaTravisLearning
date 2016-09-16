@@ -20,8 +20,8 @@ before_install:
   - java -version
 install: npm install
 script:
-  - ./mvn clean
-  - ./mvn test
+  - ./mvnw clean
+  - ./mvnw test
   - gulp test
   - ./mvn package -Pprod -DskipTests
 notifications:
