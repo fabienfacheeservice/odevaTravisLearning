@@ -10,7 +10,6 @@ cache:
 env:
   - NODE_VERSION=4.4.7
 before_install:
-  - ./mvnw install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
   - nvm install $NODE_VERSION
   - npm install -g npm
   - npm install -g bower gulp-cli
